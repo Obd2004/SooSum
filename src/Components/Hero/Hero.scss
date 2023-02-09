@@ -1,0 +1,133 @@
+.hero{
+        // background-image: url('../../Assets/Images/homeBg.jpg');
+        // background-repeat: no-repeat;
+        // background-position: center;
+        // background-size: 100%;
+    &__container{
+        padding-top: 150px;
+        padding-bottom: 100px;
+        padding-left: 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__left{
+            h4{ 
+                font-family: 'Roboto Slab';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 40px;
+                color: #FFFFFF;
+            }
+            h2{
+                font-family: 'Roboto Slab';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 55px;
+                line-height: 79px;
+                color: #FFFFFF;
+            }
+            &__btn{
+                background-color: #167526;
+                width: 250px;
+                height: 60px;
+                border-radius: 8px;
+                border: none;
+                margin-top: 42px;
+                font-family: 'Roboto Slab';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 24px;
+                text-align: center;
+                letter-spacing: 1.28px;
+                text-transform: uppercase;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #FFFFFF;
+                &:active{
+                    transition: all 0.3s ease;
+                    background-color: #0a9f37ec;
+                  }
+                  &:hover{
+                    color: #FFFFFF;
+                  }
+            }
+        }
+        &__right{
+            width: 700px;
+            height: 482px;
+            padding-left: 30px;
+            img{
+                width: 630px;
+                height: 400px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1440px) {
+    .hero{
+        &__container{
+            padding-top: 150px;
+            padding-bottom: 100px;
+            padding-left: 0;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &__left{
+                h4{
+                    font-family: 'Roboto Slab';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 30px;
+                    line-height: 40px;
+                    color: #FFFFFF;
+                }
+                h2{
+                    font-family: 'Roboto Slab';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 55px;
+                    line-height: 79px;
+                    color: #FFFFFF;
+                }
+                button{
+                    background-color: #167526;
+                    padding: 18px 24px;
+                    border-radius: 8px;
+                    border: none;
+                    margin-top: 42px;
+                    &:active{
+                        transition: all 0.3s ease;
+                        background-color: #0a9f37ec;
+                      }
+                    a{
+                        font-family: 'Roboto Slab';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 24px;
+                        text-align: center;
+                        letter-spacing: 1.28px;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+            &__right{
+                width: 700px;
+                height: 482px;
+                padding-left: 30px;
+                img{
+                    width: 630px;
+                    height: 400px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

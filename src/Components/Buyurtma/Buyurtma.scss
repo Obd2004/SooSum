@@ -1,0 +1,382 @@
+.buyurtma {
+  &__container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+    &__left {
+      margin-top: 89px;
+      &__btn{
+        width: 400px;
+        height: 60px;
+        border: none;
+        border-radius: 6px;
+        background-color: #167526;
+        color: #FFFFFF;
+        &:active{
+          background-color: #15531f;
+        }
+      }
+      form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        width: 572px;
+        height: 574px;
+        background: #770613;
+        border-radius: 20px;
+        background-image: url(../../Assets/Images/buyurtmaLeft.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        h2 {
+          font-family: "Roboto Slab";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 46px;
+          line-height: 65px;
+          color: #ffffff;
+          padding-top: 40px;
+        }
+        p {
+          padding: 0 20px;
+          font-family: "Roboto Slab";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18.2587px;
+          line-height: 27px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          color: #ffffff;
+          padding-bottom: 28px;
+          padding-top: 60px;
+        }
+        input {
+          width: 380.21px;
+          outline: none;
+          color: #ffffff;
+          background-color: #89363d;
+          border-radius: 6px;
+        }
+        label {
+          color: #ffffff;
+        }
+      }
+    }
+    &__right {
+        margin: 0 auto;
+        position: relative;
+        .karnay{
+            z-index: 999;
+            position: absolute;
+            top: 70px;
+            right: -110px;
+            transform: rotate(-3deg);
+            animation: anime 3s infinite;
+        }
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-right: 150px;
+        li {
+            transform: rotate(6.06deg);
+        }
+        .item1 {
+          background: linear-gradient(90deg, #167526 0%, #02c623 79.68%);
+          box-shadow: 0px -11.6464px 17.4696px rgba(0, 0, 0, 0.2);
+          width: 150px;
+          height: 40px;
+          h5{
+            font-family: 'Bitter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 33.0251px;
+            line-height: 40px;
+            color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        .item2{
+            background: #FFFFFF;
+            box-shadow: 0px 0px 34.9392px rgba(0, 0, 0, 0.5);
+            
+            h3{
+                font-family: 'Bitter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 71.4088px;
+                line-height: 86px;
+                display: flex;
+                align-items: center;
+                text-decoration: line-through;
+                color: #ED010B;
+                padding-top: 10px;
+                padding-left: 60px;
+                padding-right: 33px;
+            }
+        }
+        .item3{
+            z-index: 999;
+            background: linear-gradient(269.32deg, #167526 -0.1%, #00BC20 99.82%);
+            box-shadow: 0px 0px 34.9392px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h2{
+                font-family: 'Bitter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 71.4088px;
+                line-height: 86px;
+                display: flex;
+                align-items: center;
+                color: #FFFFFF;
+                padding-right: 110px;
+                padding-left: 130px;
+            }
+        }
+        .item4{
+            background: #FFFFFF;
+            box-shadow: 10px 0 10px 0 #000000;
+            span{
+                display: flex;
+                h6{
+                    font-family: 'Bitter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 25.4029px;
+                    line-height: 30px;
+                    display: flex;
+                    align-items: center;
+                    color: #167526;
+                    padding-right: 10px;
+                    padding-left: 10px;
+
+                }
+                h3{
+                    font-family: 'Bitter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 40px;
+                    line-height: 48px;
+                    display: flex;
+                    align-items: center;
+                    color: #E70503;
+                    padding-right: 10px;
+                }
+            }
+        }
+      }
+    }
+    @keyframes anime {
+        0%{
+            transform: rotate(-10deg);
+        }
+        50%{
+            transform: rotate(5deg)
+        }
+        100%{
+            transform: rotate(-10deg);
+        }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .buyurtma {
+    &__container {
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 0;
+      &__left {
+        margin-top: 89px;
+        &__btn{
+          width: 380px;
+          height: 50px;
+          border: none;
+          border-radius: 6px;
+          background-color: #167526;
+          color: #FFFFFF;
+          &:active{
+            background-color: #15531f;
+          }
+        }
+        form {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          text-align: center;
+          width: 552px;
+          height: 554px;
+          background: #770613;
+          border-radius: 20px;
+          background-image: url(../../Assets/Images/buyurtmaLeft.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          h2 {
+            font-family: "Roboto Slab";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 46px;
+            line-height: 65px;
+            color: #ffffff;
+            padding-top: 40px;
+          }
+          p {
+            font-family: "Roboto Slab";
+            padding: 0 20px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18.2587px;
+            line-height: 27px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #ffffff;
+            padding-bottom: 28px;
+            padding-top: 60px;
+          }
+          input {
+            width: 350.21px;
+            outline: none;
+            color: #ffffff;
+            background-color: #89363d;
+            border-radius: 6px;
+          }
+          label {
+            color: #ffffff;
+          }
+        }
+      }
+      &__right {
+          position: relative;
+          .karnay{
+              z-index: 999;
+              position: absolute;
+              top: 70px;
+              right: -70px;
+              transform: rotate(-3deg);
+              animation: anime 3s infinite;
+          }
+        ul {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: column;
+          margin: 0 auto;
+          padding-right: 150px;
+          li {
+              transform: rotate(6.06deg);
+          }
+          .item1 {
+            background: linear-gradient(90deg, #167526 0%, #02c623 79.68%);
+            box-shadow: 0px -11.6464px 17.4696px rgba(0, 0, 0, 0.2);
+            width: 150px;
+            height: 40px;
+            h5{
+              font-family: 'Bitter';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 33.0251px;
+              line-height: 40px;
+              color: #FFFFFF;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+          .item2{
+              background: #FFFFFF;
+              box-shadow: 0px 0px 34.9392px rgba(0, 0, 0, 0.5);
+              
+              h3{
+                  font-family: 'Bitter';
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 71.4088px;
+                  line-height: 86px;
+                  display: flex;
+                  align-items: center;
+                  text-decoration: line-through;
+                  color: #ED010B;
+                  padding-top: 10px;
+                  padding-left: 60px;
+                  padding-right: 33px;
+              }
+          }
+          .item3{
+              z-index: 999;
+              background: linear-gradient(269.32deg, #167526 -0.1%, #00BC20 99.82%);
+              box-shadow: 0px 0px 34.9392px rgba(0, 0, 0, 0.5);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              h2{
+                  font-family: 'Bitter';
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 71.4088px;
+                  line-height: 86px;
+                  display: flex;
+                  align-items: center;
+                  color: #FFFFFF;
+                  padding-right: 110px;
+                  padding-left: 130px;
+              }
+          }
+          .item4{
+              background: #FFFFFF;
+              box-shadow: 10px 0 10px 0 #000000;
+              span{
+                  display: flex;
+                  h6{
+                      font-family: 'Bitter';
+                      font-style: normal;
+                      font-weight: 400;
+                      font-size: 25.4029px;
+                      line-height: 30px;
+                      display: flex;
+                      align-items: center;
+                      color: #167526;
+                      padding-right: 10px;
+                      padding-left: 10px;
+  
+                  }
+                  h3{
+                      font-family: 'Bitter';
+                      font-style: normal;
+                      font-weight: 400;
+                      font-size: 40px;
+                      line-height: 48px;
+                      display: flex;
+                      align-items: center;
+                      color: #E70503;
+                      padding-right: 10px;
+                  }
+              }
+          }
+        }
+      }
+      @keyframes anime {
+          0%{
+              transform: rotate(-10deg);
+          }
+          50%{
+              transform: rotate(5deg)
+          }
+          100%{
+              transform: rotate(-10deg);
+          }
+      }
+    }
+  }
+}

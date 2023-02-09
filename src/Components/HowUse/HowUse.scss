@@ -1,0 +1,43 @@
+.howUse{
+    background-image: url(../../Assets/Images/questionBg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 89px;
+    padding-bottom: 56px;
+    &__container{
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+        flex-direction: column;
+
+        &__title{
+            width: 800px;
+            h3{
+                font-family: 'Roboto Slab';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 36px;
+                line-height: 46px;
+                display: flex;
+                align-items: center;
+                color: #FFFFFF;
+
+            }
+        }
+        &__text{
+            width: 800px;
+            p{
+                padding-top: 30px;
+                font-family: 'Roboto Slab';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+                display: flex;
+                align-items: center;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
