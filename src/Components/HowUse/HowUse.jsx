@@ -10,14 +10,14 @@ function HowUse() {
             <div className="howUse__container__title">
                 {
                     Question?.map((e)=>(
-                        <h3>{e[`title_${lan}`]}</h3>
+                        <h3 key={e.id}>{e[`title_${lan}`]}</h3>
                     ))
                 }
             </div>
             <div className="howUse__container__text">
                 {
                     Question?.map((e)=>(
-                        <p>{e[`text_${lan}`]}</p>
+                        <p key={e.id}>{e[`text_${lan}`]}</p>
                     ))
                 }
             </div>

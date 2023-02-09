@@ -13,7 +13,7 @@ function Footer() {
           <img src={logo} alt="" />
           {
             Footerr?.map((e) => (
-              <p>{e[`text_${lan}`]}</p>
+              <p key={e.id}>{e[`text_${lan}`]}</p>
             ))
           }
           <ul>
@@ -34,7 +34,7 @@ function Footer() {
         <ul className='footer__container__list'>
           {
             Nav?.map((e) => (
-              <li className='footer__container__list__item'>
+              <li key={e.id} className='footer__container__list__item'>
                 <a href={e.href}>{e[`nav_${lan}`]}</a>
               </li>
             ))
@@ -43,8 +43,8 @@ function Footer() {
         <div className="footer__container__right">
           {
             Orders?.map((e) => (
-              <form className='footer__container__right__form' action="#">
-                <h5>{e[`text_${lan}`]}</h5>
+              <form key={e.id} className='footer__container__right__form' action="#">
+                <h5 key={e.id}>{e[`text_${lan}`]}</h5>
               </form>
             ))
           }
@@ -55,7 +55,7 @@ function Footer() {
               />
           {
             Btn?.map((e) => (
-              <button className='btn1'>{e[`title_${lan}`]}</button>
+              <button key={e.id} className='btn1'>{e[`title_${lan}`]}</button>
             ))
           }
         </div>

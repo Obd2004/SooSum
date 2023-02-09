@@ -9,18 +9,18 @@ function Faktlar() {
       <div className="faktlar__container container">
         <div className="faktlar__container__title">
           {
-            FactsData?.map((e) => (
-              <h2 key={e.id}>{e[`title_${lan}`]}</h2>
+            FactsData?.map((e , i) => (
+              <h2 key={i}>{e[`title_${lan}`]}</h2>
             ))
           }
         </div>
         <ul className='faktlar__container__list'>
           {
             FactsData?.map((e)=>(
-              e.facts?.map((q,i)=>(
+              e.facts?.map((q)=>(
                 <li key={e.id} className='faktlar__container__list__item'>
-                  <h2 key={i} className='faktlar__container__list__item__title'>{q.numb}</h2>
-                  <p key={i} className='faktlar__container__list__item__text'>{q[`text_${lan}`]}</p>
+                  <h2 className='faktlar__container__list__item__title'>{q.numb}</h2>
+                  <p className='faktlar__container__list__item__text'>{q[`text_${lan}`]}</p>
                 </li>
               ))
             ))

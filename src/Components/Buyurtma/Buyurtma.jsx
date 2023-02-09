@@ -35,7 +35,7 @@ function Buyurtma() {
             />
               {
                 Btn?.map((e)=>(
-                  <button className='buyurtma__container__left__btn'>{e[`title_${lan}`]}</button>
+                  <button key={e.id} className='buyurtma__container__left__btn'>{e[`title_${lan}`]}</button>
                 ))
               }
           </form>
@@ -61,7 +61,7 @@ function Buyurtma() {
                 <li className='item3'>
                   {
                     e.numb?.map((q)=>(
-                      <h2>{q.dis}</h2>
+                      <h2 key={e.id}>{q.dis}</h2>
                     ))
                   }
                 </li>
@@ -69,12 +69,12 @@ function Buyurtma() {
                   <span>
                   {
                     e.numb?.map((l)=>(
-                      <h6>{e[`benefit_${lan}`]}</h6>
+                      <h6 key={e.id}>{e[`benefit_${lan}`]}</h6>
                     ))
                   }
                   {
                     e.numb?.map((w)=>(
-                      <h4>{w.ben}</h4>
+                      <h4 key={e.id}>{w.ben}</h4>
                     ))
                   }
                   </span>

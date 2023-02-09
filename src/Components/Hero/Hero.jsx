@@ -14,7 +14,7 @@ function Hero() {
             <h4 key={e.id}>{e.natural}% natural</h4>
           ))}
           {Slider?.map((e) => (
-            <h2>{e[`title_${lan}`]}</h2>
+            <h2 key={e.id}>{e[`title_${lan}`]}</h2>
           ))}
           {Btn?.map((e) => (
             <a

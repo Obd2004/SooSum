@@ -31,7 +31,7 @@ function MahsulotAbout() {
                 <div data-aos="fade-left" className="MahsulotAbout__container2__right">
                     {
                         ProductInfo?.map((e)=>(
-                            e.id == 2 ? <p className='text2'>{e[`text_${lan}`]}</p> : false
+                            e.id == 2 ? <p key={e.id} className='text2'>{e[`text_${lan}`]}</p> : false
                         ))
                     }
                 </div>
@@ -40,7 +40,7 @@ function MahsulotAbout() {
                 <div className="MahsulotAbout__container3__left">
                     {
                         ProductInfo?.map((e)=>(
-                            e.id == 3 ? <p>{e[`text_${lan}`]}</p> : false
+                            e.id == 3 ? <p key={e.id}>{e[`text_${lan}`]}</p> : false
                         ))
                     }
                 </div>

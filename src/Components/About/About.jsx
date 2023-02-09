@@ -11,12 +11,12 @@ function About() {
           <div className="about__container__left">
             {
               AboutCompany?.map((e)=>(
-                <h2>{e[`title_${lan}`]}</h2>
+                <h2 key={e.id}>{e[`title_${lan}`]}</h2>
               ))
             }
             {
               AboutCompany?.map((e)=>(
-                <p>{e[`text_${lan}`]}</p>
+                <p key={e.id}>{e[`text_${lan}`]}</p>
               ))
             }
           </div>

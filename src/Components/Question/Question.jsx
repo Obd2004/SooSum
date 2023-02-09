@@ -10,7 +10,7 @@ function Question() {
         <div className="questions__container__title">
           {
             ShouldDrink?.map((e) => (
-              <h2>{e[`title_${lan}`]}</h2>
+              <h2 key={e.id}>{e[`title_${lan}`]}</h2>
             ))
           }
         </div>
@@ -18,8 +18,8 @@ function Question() {
         <ul className="questions__container__items__left">
           {
             ShouldDrink?.map((e)=>(
-              e.cause?.map((d , q)=>(
-                <li key={q}>{d[`text_${lan}`]}</li>
+              e.cause?.map((d )=>(
+                <li key={d.id}>{d[`text_${lan}`]}</li>
               ))
             ))
           }
@@ -27,8 +27,8 @@ function Question() {
         <ul className="questions__container__items__right">
           {
             ShouldDrink?.map((e)=>(
-              e.cause2?.map((d , q)=>(
-                <li key={q}>{d[`text_${lan}`]}</li>
+              e.cause2?.map((d )=>(
+                <li key={d.id}>{d[`text_${lan}`]}</li>
               ))
             ))
           }

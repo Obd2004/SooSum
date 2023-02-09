@@ -105,39 +105,39 @@
         }
 
 
-        // @keyframes animeLeft {
-        //     25%{
-        //         opacity: 0.1;
-        //     }
-        //     50%{
-        //         transform: translate(715px);
-        //         opacity: 1;
-        //     }
-        //     75%{
-        //         opacity: 1;
+        @keyframes animeLeft {
+            25%{
+                opacity: 0.1;
+            }
+            50%{
+                transform: translate(715px);
+                opacity: 1;
+            }
+            75%{
+                opacity: 1;
 
-        //     }
-        //     100%{
-        //         opacity: 1;
+            }
+            100%{
+                opacity: 1;
 
-        //     }
-        // }
-        // @keyframes animeRight {
-        //     25%{
-        //         opacity: 1;
-        //     }
-        //     50%{
-        //         opacity: 1;
-        //         transform: translate(-715px);
-        //     }
-        //     75%{
-        //         opacity: 0.1;
-        //     }
-        //     100%{
-        //         display: flex;
-        //         opacity: 1;
-        //     }
-        // }
+            }
+        }
+        @keyframes animeRight {
+            25%{
+                opacity: 1;
+            }
+            50%{
+                opacity: 1;
+                transform: translate(-715px);
+            }
+            75%{
+                opacity: 0.1;
+            }
+            100%{
+                display: flex;
+                opacity: 1;
+            }
+        }
     }
 }
 @media screen and (max-width: 1440px){
@@ -246,39 +246,39 @@
                     }
                 }
             }
-            // @keyframes animeLeft {
-            //     25%{
-            //         opacity: 0.1;
-            //     }
-            //     50%{
-            //         transform: translate(615px);
-            //         opacity: 1;
-            //     }
-            //     75%{
-            //         opacity: 1;
+            @keyframes animeLeft {
+                25%{
+                    opacity: 0.1;
+                }
+                50%{
+                    transform: translate(615px);
+                    opacity: 1;
+                }
+                75%{
+                    opacity: 1;
     
-            //     }
-            //     100%{
-            //         opacity: 1;
+                }
+                100%{
+                    opacity: 1;
     
-            //     }
-            // }
-            // @keyframes animeRight {
-            //     25%{
-            //         opacity: 1;
-            //     }
-            //     50%{
-            //         opacity: 1;
-            //         transform: translate(-615px);
-            //     }
-            //     75%{
-            //         opacity: 0.1;
-            //     }
-            //     100%{
-            //         display: flex;
-            //         opacity: 1;
-            //     }
-            // }
+                }
+            }
+            @keyframes animeRight {
+                25%{
+                    opacity: 1;
+                }
+                50%{
+                    opacity: 1;
+                    transform: translate(-615px);
+                }
+                75%{
+                    opacity: 0.1;
+                }
+                100%{
+                    display: flex;
+                    opacity: 1;
+                }
+            }
         }
     }
 }
